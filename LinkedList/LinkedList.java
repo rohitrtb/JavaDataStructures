@@ -1,13 +1,16 @@
+package LinkedList;
+
 /**
  * Created by Rohit on 2/19/2017.
  */
 public class LinkedList {
+
     private Node head;
     private Node tail;
     private int count;
 
     /** Linked list constructor. */
-    LinkedList() {
+    public LinkedList() {
         head = null;
         tail = null;
         count = 0;
@@ -19,7 +22,7 @@ public class LinkedList {
      */
     public void add(String name) {
         /* create a new node */
-        Node node = new Node (name);
+        Node node = new Node(name);
         node.setNextNode(head);
         head = node;
         if (count == 0) {
@@ -93,5 +96,5 @@ public class LinkedList {
         }
         tail = prevNode;
     }
-    // custom commit
+
 }
